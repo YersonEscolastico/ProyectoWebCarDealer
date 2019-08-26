@@ -74,23 +74,74 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="imagenes\ca.png" />
+    <Content Include="imagenes\driver.jpg" />
+    <Content Include="imagenes\ferrary.jpg" />
+    <Content Include="imagenes\otra.jpg" />
+    <Content Include="imagenes\toyota.jpg" />
+    <Content Include="images\demo\320x220.png" />
+    <Content Include="images\demo\avatar.png" />
+    <Content Include="images\demo\backgrounds\01.png" />
+    <Content Include="images\demo\backgrounds\02.png" />
+    <Content Include="images\demo\backgrounds\03.png" />
+    <Content Include="images\demo\backgrounds\04.png" />
+    <Content Include="images\demo\backgrounds\car.png" />
+    <Content Include="images\demo\backgrounds\index.html" />
+    <Content Include="images\demo\gallery\01.png" />
+    <Content Include="images\demo\gallery\index.html" />
+    <Content Include="images\demo\imgl.gif" />
+    <Content Include="images\demo\imgr.gif" />
+    <Content Include="images\demo\index.html" />
+    <Content Include="images\index.html" />
+    <Content Include="layout\index.html" />
+    <Content Include="layout\scripts\index.html" />
+    <Content Include="layout\scripts\jquery.backtotop.js" />
+    <Content Include="layout\scripts\jquery.flexslider-min.js" />
+    <Content Include="layout\scripts\jquery.min.js" />
+    <Content Include="layout\scripts\jquery.mobilemenu.js" />
+    <Content Include="layout\styles\custom.flexslider.css" />
+    <Content Include="layout\styles\fontawesome-4.6.3.min.css" />
+    <Content Include="layout\styles\fonts\fontawesome-webfont.svg" />
+    <Content Include="layout\styles\fonts\index.html" />
+    <Content Include="layout\styles\framework.css" />
+    <Content Include="layout\styles\index.html" />
+    <Content Include="layout\styles\layout.css" />
+    <Content Include="pages\basic-grid.html" />
+    <Content Include="pages\full-width.html" />
+    <Content Include="pages\gallery.html" />
+    <Content Include="pages\index.html" />
+    <Content Include="pages\sidebar-left.html" />
+    <Content Include="pages\sidebar-right.html" />
+    <Content Include="Registros\rUsuarios.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="MasterPage\Master.Master.cs">
+    <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MasterPage\Master.Master.designer.cs">
+    <Compile Include="Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registros\rUsuarios.aspx.cs">
+      <DependentUpon>rUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\rUsuarios.aspx.designer.cs">
+      <DependentUpon>rUsuarios.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MasterPage\Master.Master" />
+    <Content Include="Master.Master" />
+    <Content Include="layout\styles\fonts\fontawesome-webfont.eot" />
+    <Content Include="layout\styles\fonts\fontawesome-webfont.ttf" />
+    <Content Include="layout\styles\fonts\fontawesome-webfont.woff" />
+    <Content Include="layout\styles\fonts\fontawesome-webfont.woff2" />
+    <Content Include="layout\styles\fonts\FontAwesome.otf" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -102,6 +153,20 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{4B7B6F2D-9924-498B-96AA-9DDBE910B055}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{3EFFDC44-E58F-478E-AA37-87CA3F876621}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{F9759B39-451F-4D53-8984-F5A3EE1800BD}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
