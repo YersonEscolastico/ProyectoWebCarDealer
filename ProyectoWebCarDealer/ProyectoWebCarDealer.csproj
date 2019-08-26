@@ -106,6 +106,7 @@
     <Content Include="layout\styles\framework.css" />
     <Content Include="layout\styles\index.html" />
     <Content Include="layout\styles\layout.css" />
+    <Content Include="MainForm.aspx" />
     <Content Include="pages\basic-grid.html" />
     <Content Include="pages\full-width.html" />
     <Content Include="pages\gallery.html" />
@@ -118,6 +119,13 @@
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.aspx.cs">
+      <DependentUpon>MainForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainForm.aspx.designer.cs">
+      <DependentUpon>MainForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
