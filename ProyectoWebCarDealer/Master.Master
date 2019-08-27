@@ -56,7 +56,7 @@ body {
   background-color: #000;
     text-align: center;
   color: #ffd800;
-  height: 20%;
+  height: 20% ;
 }
 
 
@@ -64,6 +64,7 @@ body {
 .topnav a:hover {
   background-color: #ddd;
   color: #ff0000;
+
 }
 
 /* Style the content */
